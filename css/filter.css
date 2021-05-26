@@ -1,0 +1,21 @@
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  margin: 3rem 1rem;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}

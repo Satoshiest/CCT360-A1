@@ -1,0 +1,88 @@
+/* =======================
+        left side
+======================= */
+
+.left {
+    flex: 1 1 25rem;
+    margin: 3rem;
+}
+
+.left img {
+    width: 100%;
+}
+
+/* =======================
+         right side
+======================= */
+
+.right {
+    flex: 1 1 30rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15rem;
+    z-index: 0;
+}
+
+/* =======================
+     right side texts
+======================= */
+
+#paragraph {
+    text-align: justify;
+    padding: 0 10px;
+    margin: 0 2.5rem;
+}
+
+#syntax {
+    color: gray;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    display: block;
+}
+
+/* =======================
+    right side buttons
+======================= */
+
+.button a {
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+#resource {
+    text-align: center;
+}
+
+#resource a {
+    width: 15rem;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
+    padding: 14px 40px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 2.5rem;
+    margin-bottom: .3rem;
+}
+
+.download {
+    text-align: center;
+}
+
+.download a {
+    width: 15rem;
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+    padding: 14px 40px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+}

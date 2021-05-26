@@ -1,0 +1,306 @@
+/* ==================
+        Global
+   ================== */
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+
+/* ==================
+  top announcement bar (coding is fun!!) by default
+   ================== */
+
+#section-announcement {
+    background: #5c5c5c;
+    color: #ffffff;
+    font-size: large;
+    padding: 1px;
+}
+
+
+/* ==================
+    Sticky Header
+   ================== */
+
+#header {
+    position: sticky;
+    top: 0;
+
+    font-size: 20px;
+
+    background-image: url(../images/header.jpeg); /* image from unsplash */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    z-index: 1;  /* this is for inner page */
+}
+
+#header #overlay {
+    background-color: #ffffff77;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#HeadTitle {
+    font-size: 35px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* ==================
+    Main Navigation
+   ================== */
+
+#mainNav {
+    left: 0px;
+    height: 43px;
+    background-color: #2C64B4;
+    width: 100%;
+}
+
+#mainNav li {
+    margin: 0 .5rem;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+#mainNav li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #FFF;
+}
+
+/* ==================
+  dropdown navigation
+   ================== */
+
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    position: absolute;
+    display: none;
+    width: 13rem;
+    background-color: #2C64B4;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-content a:hover{
+    background-color: #ffffff77;
+    transition: all 0.2s ease-in;
+}
+
+/* ==================
+    homepage image
+   ================== */
+
+#imagedisplay img {
+    width: 100%;
+}
+
+/* ==================
+      Main content
+   ================== */
+
+.divider {
+    text-transform: uppercase;
+    margin: 5rem;
+}
+
+.logo {
+    margin: 1rem;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+
+    /* ==================
+    ease in logo on scroll
+    ================== */
+    opacity: 0;
+    transition: opacity .3s .25s ease-out,
+                -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out,
+                -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+    will-change: transform, opacity;
+}
+
+.logo.is-visible {
+    opacity: 1;
+}
+
+/* ==================
+    View all button
+   ================== */
+
+.SectionFooter a:link, a:visited {
+    background-color: gray;
+    color: white;
+    padding: 14px 40px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 5rem;
+}
+
+/* ==================
+line that divide main and bottom content
+   ================== */
+
+#special-line {
+    margin-top: 5rem;
+}
+
+
+/* ==================
+   Bottom Containers
+   ================== */
+
+#desktop-bottom {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 3rem;
+}
+
+#about {
+    flex: 1 1 25rem;
+    margin: 1rem;
+}
+
+#mail {
+	flex: 1 1 25rem;
+    margin: 1rem;
+}
+
+#thanks {
+	flex: 1 1 25rem;
+    margin: 1rem;
+}
+
+/* ==================
+   Bottom contents
+   ================== */
+
+#about p {
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+#mail p {
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+#mail label {
+	color: #707070;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    display: block;
+}
+
+/* ==================
+     contact icons
+   ================== */
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ==================
+     mail input box
+   ================== */
+
+#mail input[type="email"] {
+	width: 100%;
+	box-sizing: border-box;
+    padding: 7px;
+    font-size: .9rem;
+    border: 1px solid #727272;
+	margin-bottom: 1rem;
+}
+
+/* ==================
+   mail subscribe button
+   ================== */
+
+#mail input[type="submit"]{
+	font-size: 1rem;
+	text-align: center;
+    padding: 14px 40px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    background: gray;
+    cursor: pointer;
+}
+
+/* ==================
+link colour after visited
+   ================== */
+
+#thanks a:visited {
+    color: gray;
+}
+
+/* ===============
+      footer
+   =============== */
+
+#footer{
+	display:block;
+	color: #fff;
+    background-color: #000;
+}
+
+#footer ul{
+	max-width: 80rem;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#footer li{
+	list-style-type: none;
+	flex: 1 1 230px;
+	font-size: 1rem;
+	padding: 1rem;
+	font-weight: 700;
+}
+
+#footer a{
+	text-decoration: none;
+    color: white;
+}
+
+#footer a:hover{
+	text-decoration: underline;
+}
+
+/* ==================
+for construction page
+   ================== */
+
+#construction {
+    font-size: 50px;
+    margin-top: 5rem;
+}
